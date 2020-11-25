@@ -1,0 +1,12 @@
+{
+    "secret": "Random_secreat_key",
+    "refreshTokenSecret": "some-secret-refresh-token-key",
+    "port": 3000,
+    "tokenLife": 4800,
+    "refreshTokenLife": 849200,
+    "DB_USER": "root",
+    "DB_PASSWORD": "Mouni.4153",
+    "DB_HOST": "localhost",
+    "DB_PORT": "5432",
+    "DB_DATABASE": "TaskDB"
+}
