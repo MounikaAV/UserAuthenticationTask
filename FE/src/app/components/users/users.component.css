@@ -1,0 +1,26 @@
+button {
+    border: none;
+    background-color: white;
+}
+input[type="button"]:focus {
+    outline: 0 !important;
+}
+.card-header:first-child {
+    width: 100%;
+    margin-left: 0px;
+}
+.card-user {
+    position: absolute;
+    right: 66px;
+    color: #497caf;
+}
+.logout {
+    position: absolute;
+    right: 67px;
+    top: 34px;
+    font-size: 13px;
+}
+.logout:hover {
+    color: blue;cursor: pointer;
+    text-decoration: underline;
+}

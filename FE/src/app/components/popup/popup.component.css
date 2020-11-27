@@ -1,0 +1,15 @@
+.clear-btn {
+    color: #a8ace2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.container-header {
+    position: relative;
+}
+
+.clear-btn:hover {
+    color: blue;
+}

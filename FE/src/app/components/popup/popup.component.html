@@ -1,0 +1,21 @@
+<ng-container>
+    <div class="row container-header">
+        <h4>User Details</h4>
+        <span class="clear-btn" (click)="cancelPopup()">
+            <i class="material-icons">
+                cancel
+            </i>
+        </span>
+    </div>
+    <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input name="first_name" id="first_name" [(ngModel)]="first_name"/>
+    </div>
+    <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input name="last_name" id="last_name" [(ngModel)]="last_name" />
+    </div>
+    <button class="add-btn" (click)="acceptPoup()">
+        <div class="add-btn-text" >ADD</div>
+    </button>
+</ng-container>

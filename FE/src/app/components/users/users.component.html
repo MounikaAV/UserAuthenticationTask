@@ -1,0 +1,58 @@
+<section id="extended">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header row">
+                    <h4 class="card-title">Users List</h4>
+                    <h5 class="card-user">{{CurrentLoggedinUserName}}</h5>
+
+                    <div class="logout" (click)="logout()">logout</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-body table-responsive">
+                        <table class="table text-center m-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User Name</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let user of usersList; let i = index">
+                                    <td>{{user.user_id}}</td>
+                                    <!-- <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1"></label>
+                                        </div>
+                                    </td> -->
+                                    <td>{{user.first_name}}</td>
+                                    <td>{{user.last_name}}</td>
+                                    <td>{{user.user_name}}</td>
+                                    <td class="text-truncate">
+                                        <button (click)="editUser(user)">
+                                            <span class="material-icons">
+                                                edit
+                                            </span>
+                                        </button>
+                                        <button (click)="deleteUser(user)">
+                                            <span class="material-icons">
+                                                person_remove
+                                            </span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div *ngIf="usersList.length <= 0">
+                            <div style="text-align: center; margin-top: 15px;">No Users Exists</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
